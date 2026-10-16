@@ -1,0 +1,19 @@
+# A test stack for EVA's manual test (skills/discord-bot/manual-test.md rows 19-22). Nothing here is public.
+stack: claude-test-evastk
+database: { tier: scratch, memory: 128m }
+cache: { memory: 64m }
+services:
+  lobby:
+    path: services/lobby
+    port: 3000
+    memory: 128m
+    health: /healthz
+    migrate: true
+    uses: [database, cache]
+  world:
+    path: services/world
+    port: 7000
+    memory: 128m
+    health: /healthz
+    uses: [database, cache]
+    after: [lobby]
