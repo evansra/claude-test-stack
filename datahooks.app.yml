@@ -1,0 +1,6 @@
+# D125 test: a single app with env, a secret and a tunable (Claude, 2026-10-17). Nothing secret here.
+env:
+  MODE: test
+  FEATURE_X: "off"
+secrets: [CLAUDE_TEST_SECRET]
+tunable: [FEATURE_X]
