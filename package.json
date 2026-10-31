@@ -1,0 +1,1 @@
+{ "name": "claude-test-mongo", "private": true, "dependencies": { "mongodb": "6.10.0" } }
