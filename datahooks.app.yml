@@ -1,0 +1,2 @@
+# D160 live test: this app asks for two copies, always (the manifest wins over EVA)
+scale: { max: 2, min: 2 }

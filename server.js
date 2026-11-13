@@ -24,7 +24,7 @@ const server = http.createServer((req, res) => {
     if (scaleMode === "greedy") { res.end('{"v":1,"want":{"world":[1,2,3,4,5,6,7,8,9],"../etc":[1]}}\n'); return; }
     res.setHeader("content-type", "application/json"); res.end('{"v":1,"want":{"world":[1,2]}}\n'); return;
   }
-  res.end(`id=${id} url=${u} started=${started} build=2\n`);
+  res.end(`id=${id} url=${u} started=${started} build=3\n`);
 });
 
 // A minimal WebSocket: complete the handshake, send one text frame naming the replica, close.
