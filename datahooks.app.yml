@@ -1,3 +1,5 @@
-# D160 live test: scale: dropped from the manifest, so its scaling is turned off
+# D160 live test: a tunable setting and a secret, changed at a restart, must reach every instance
 env:
   GREETING: hello
+tunable: [GREETING]
+secrets: [TEST_TOKEN]
