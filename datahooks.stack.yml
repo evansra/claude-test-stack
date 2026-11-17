@@ -1,7 +1,0 @@
-stack: claude-test-heal
-services:
-  web:
-    path: .
-    port: 3000
-    memory: 128m
-    health: /healthz

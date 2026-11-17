@@ -1,0 +1,2 @@
+# D166 live test: the lab applies db/schema.sql to the app's own Postgres, and its changes at every deploy
+schema: db/schema.sql

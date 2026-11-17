@@ -1,3 +1,3 @@
-# claude-test-stack, branch heal
+# claude-test-stack, branch schema
 
-D148 self-healing test: GET /hang makes /healthz answer 500 while the process runs on.
+D166 live test: `datahooks.app.yml` declares `db/schema.sql`; the lab creates and changes the tables, the app only serves /healthz.
