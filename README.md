@@ -1,3 +1,3 @@
-# claude-test-stack, branch heal
+# claude-test-stack, branch schema-stack
 
-D148 self-healing test: GET /hang makes /healthz answer 500 while the process runs on.
+D166 live test: stack `claude-test-sch`, its Postgres schema declared in `db/schema.sql`.

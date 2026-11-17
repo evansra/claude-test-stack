@@ -1,7 +1,11 @@
-stack: claude-test-heal
+# D166 live test: a stack whose database schema is declared (database.schema)
+stack: claude-test-sch
+database: { tier: scratch, memory: 256m, schema: db/schema.sql }
 services:
   web:
     path: .
     port: 3000
     memory: 128m
     health: /healthz
+    migrate: true
+    uses: [database]
